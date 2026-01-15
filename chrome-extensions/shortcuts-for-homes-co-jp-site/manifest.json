@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "shortcuts-for-homes-co-jp-site",
+  "version": "1.0",
+  "description": "Adds left/right arrow navigation to all Swiper sliders",
+  "permissions": ["scripting"],
+  "content_scripts": [{
+    "matches": ["https://*/*", "http://*/*"],
+    "js": ["content.js"],
+    "run_at": "document_end",
+    "all_frames": true
+  }]
+}
